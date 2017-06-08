@@ -11,7 +11,7 @@
       <ul class="list-group">
         <li
           class="list-group-item"
-          *ngFor="let server of servers | filter:filteredString"
+          *ngFor="let server of servers | filter:filteredString | sort:'name'"
           [ngClass]="getStatusClasses(server)">
           <span
             class="badge">
